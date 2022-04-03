@@ -1,0 +1,191 @@
+html,
+body {
+    width: 100%;
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+/*******
+Cover
+*******/
+.main-cover {
+    width: 100%;
+}
+.cover {
+    width: 100%;
+    height: 90vh;
+    background-image: url(img/no-time-to-die-poster.png);
+    background-size: 100% 100%;
+    position: relative;
+}
+.cover-info {
+    position: absolute;
+    bottom: 1%;
+}
+.description {
+    bottom: 0;
+    background-color: rgb(75, 70, 65);
+    width: 100%;
+    font-size: large;
+    margin-left: 11%;
+}
+.cover-info img {
+    margin-left: 10%;
+}
+.cover-info pre {
+    margin-left: 11%;
+}
+.cover pre {
+    color: white;
+}
+
+/********
+ Navbar 
+ ********/
+nav {
+    width: 100%;
+    height: 6%;
+    display: flex;
+}
+nav .right-nav {
+    width: 70%;
+    background-color: black;
+}
+nav .left-nav {
+    padding-top: 1%;
+    width: 30%;
+    background-color: black;
+}
+
+nav .left-nav img {
+    width: 24%;
+    margin: 0 0 0 3%;
+}
+.cat h1 {
+    font-size: 1vw;
+    color: white;
+}
+nav .right-nav .container {
+    display: flex;
+    gap: 2%;
+    justify-content: right;
+    align-items: center;
+    padding: 1% 1% 1% 0;
+}
+nav .right-nav .container .cat {
+    display: flex;
+    gap: 3%;
+}
+nav .right-nav .container .cat img {
+    width: 26%;
+}
+nav .right-nav .container input {
+    width: 26%;
+    border-radius: 10px;
+    border: 1px solid lightslategray;
+    padding: 1% 0;
+    background: black;
+    position: relative;
+}
+
+#ip {
+    background: url(img/search_white_48dp.svg) right no-repeat;
+    background-size: 10%;
+    width: 100%;
+    color: white;
+    height: 2vh;
+}
+/******
+content 
+*******/
+
+h1 {
+    font-size: 32px;
+    margin-left: 3%;
+}
+.Movies {
+    width: 100%;
+}
+.movie {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-left: 2%;
+}
+.content {
+    width: 100%;
+}
+
+.Movies-poster {
+    position: relative;
+}
+.like-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.Movies-info {
+    height: 550px;
+    width: 320px;
+    margin: 15px;
+}
+.Movies-img {
+    height: 80%;
+    width: 100%;
+}
+.ratings-trailer {
+    display: flex;
+    justify-content: space-between;
+}
+.star {
+    height: 3vh;
+}
+.ratings {
+    /* padding-right: 50%; */
+    padding-top: 2%;
+}
+.date {
+    padding-top: 3%;
+}
+.trailer-button {
+    height: 7vh;
+}
+.trailer-button img {
+    height: 5vh;
+}
+.extra-info {
+    display: flex;
+}
+/* Footer */
+.Footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+}
+.logo {
+    margin-left: 10px;
+}
+.logo img {
+    height: 30px;
+}
+
+@media screen and (max-width: 500px) and (min-width: 200px) {
+    .movie {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width: 700px) and (min-width: 500px) {
+    .movie {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    .movie {
+        display: grid;
+    }
+}
